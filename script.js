@@ -22,6 +22,8 @@ const eventHandler = function () {
     displayGuessMessage("Введите число!");
   } else if (guessingNumber < 0) {
     displayGuessMessage("Введите число больше нуля!");
+  } else if (guessingNumber > 20) {
+    displayGuessMessage("Введите число меньше или равно 20!");
   } else if (guessingNumber === secretNumber) {
     displayGuessMessage("Правильно!");
     changeColor("rgb(9, 250, 21)");
